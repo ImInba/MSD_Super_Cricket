@@ -9,7 +9,7 @@ class Team{
     int[] player_type;  // type 1->batsman 2->all rounder 3->bowler
     String[] bowlers;   //list of bowlers
     int[] bowler_type;  //type 1->fast 2->medium fast 3->fast
-    String captain;
+    String captain;     //Captain name
     int score,wickets,extras;
     float overs;
     int[] overs_bowled;
@@ -48,7 +48,7 @@ class Team{
 }
 public class Cricket {
     static HashMap<String,Team> teams = new HashMap<>();
-    static String[] team_list = {"india","srilanka","australia","england"};
+    static String[] team_list = {"india","srilanka","australia","england"}; //Add new teams here after listing them in buildTeams()
     static Random r = new Random();
     static String endmark = "----------------------------------------------------------------------";
     public static void buildTeams(){
